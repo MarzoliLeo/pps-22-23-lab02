@@ -1,4 +1,4 @@
-package u02.Task2
+package u02.Task3
 
 object Task3 extends App{
   def gcd(a: Int, b: Int): Int = b match
@@ -11,7 +11,6 @@ object Task3 extends App{
         case 0 => x
         case _ => loop(y, x % y)
     loop(a,b)
-
 
   println(gcd(36,24)) // 12
   println(gcdTail(36,24)) // 12

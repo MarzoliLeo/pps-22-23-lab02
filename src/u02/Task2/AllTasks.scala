@@ -59,7 +59,7 @@ object AllTasks extends App {
     println("Task part 2b - composition: stampa di composizione. ")
     println(compose(_ - 1, _ * 2)(5))
     /* Limitazione:
-     * Decommentando questa print ed eseguendo il codice l'IDE risponderà che le funzioni definite non appartengono ad "Any".
+     * Decommentando questa print ed eseguendo il codice l'IDE risponderà che le funzioni (_ * 2) e (_ - 2) definite non appartengono ad "Any".
        (println(compose2(_ * 2, _ - 2)(5))
      * */
 

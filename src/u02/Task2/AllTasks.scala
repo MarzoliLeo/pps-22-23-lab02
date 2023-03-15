@@ -151,23 +151,23 @@ object AllTasks extends App {
         case Some(value) => f(value)
         case _ => defaultValue
 
-      import Option.*
+    import Option.*
 
-      val s1: Option[Int] = Some(1)
-      val s2: Option[Int] = Some(2)
-      val s3: Option[Int] = None()
+    val s1: Option[Int] = Some(1)
+    val s2: Option[Int] = Some(2)
+    val s3: Option[Int] = None()
 
-      println("Task part 5: Filter. ")
-      println(filter(Some(5))(_ > 2)) // Some(5)
-      println(filter(Some(5))(_ > 8)) // None
-      println(filter(None[Int]())(_ > 2)) // None
+    println("Task part 5: Filter. ")
+    println(filter(Some(5))(_ > 2)) // Some(5)
+    println(filter(Some(5))(_ > 8)) // None
+    println(filter(None[Int]())(_ > 2)) // None
 
-      println("Task part 5: Map. ")
-      println(map(Some(5))(_ > 2)) // Some(true)
-      println(map(Some(5))(_ > 8)) // Some(false)
-      println(map(None[Int]())(_ > 2)) // None
+    println("Task part 5: Map. ")
+    println(map(Some(5))(_ > 2)) // Some(true)
+    println(map(Some(5))(_ > 8)) // Some(false)
+    println(map(None[Int]())(_ > 2)) // None
 
-      println("Task part 5: Fold. ")
-      println(fold(Some(5))(1)(_ + 1)) // 6
-      println(fold(None[Int]())(1)(_ + 1)) // 1
+    println("Task part 5: Fold. ")
+    println(fold(Some(5))(1)(_ + 1)) // 6
+    println(fold(None[Int]())(1)(_ + 1)) // 1
 }

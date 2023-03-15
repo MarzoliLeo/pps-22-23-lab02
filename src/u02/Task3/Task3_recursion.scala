@@ -1,6 +1,6 @@
 package u02.Task3
 
-object Task3 extends App{
+object Task3_recursion extends App{
   def gcd(a: Int, b: Int): Int = b match
     case 0 => a
     case _ => gcd(b, a % b )

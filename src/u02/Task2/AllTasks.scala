@@ -52,6 +52,7 @@ object AllTasks extends App {
     println(notEmpty3("foo") && !notEmpty3(""))
 
     //Task 3, svolto da solo.
+    
     def compose(f: Int => Int, g: Int => Int): Int => Int = { x => g(f(x)) }
     def compose2[A, B, C](f: B => C, g: A => B): A => C = { x => f(g(x)) }
 
